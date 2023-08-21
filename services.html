@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        .container {
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-style: oblique;
+        padding: 20%;
+        
+         }
+         .container h1:hover{
+          text-shadow:2px 2px 5px red 
+         }
+         
+         form textarea {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.5;
+          resize: vertical;
+          width: 90%;
+          height: 10px;
+        }
+  
+  form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>
+          <i
+            >How best may we serve you today, <strong><em>Please </em>use the form below to provide us with needed information</strong></i
+          >
+        </p>
+        <form action="/submit" method="post">
+          <input type="text" name="name" placeholder="Your name" />
+          <input
+            type="text"
+            phonenumner="phonenumber"
+            placeholder="Your phone number"
+          />
+          <input type="text" address="address" placeholder="Your address" />
+          <input type="text" nin="nin" placeholder="Your Nin" />
+          <input type="text" email="email" placeholder="Your E-mail" />
+          <p>Please select your choice below:</p>
+          <label for="Service">Service: </label>
+          <select name="dropdown">
+            <option value="Car">Car</option>
+            <option value="bus">bus</option>
+            <option value="bike">bike</option>
+          </select>
+          <button type="Submit">Submit</button><br>
+          <label for="Depature">Depature Date:</label>
+        <textarea
+          id="Depature
+          name="Depature: "
+          rows="1"
+          cols="12"
+          placeholder="When would you be leaving: "
+        ></textarea><br>
+        <label for="Return">Return Date:</label>
+        <textarea
+          id="Return: "
+          name="Return: "
+          rows="1"
+          cols="12"
+          placeholder="When would you be back: "
+        ></textarea>
+        <button type="Submit">Submit</button><br>
+        <p>Please select your location below:</p>
+          <label for="Locatiion">Location: </label>
+          <select name="dropdown">
+            <option value="Lagos">Lagos</option>
+            <option value="bus">Abuja</option>
+            <option value="bike">Abeoukuta</option>
+          </select>
+          <button type="Submit">Submit</button>
+        </form>
+      </div>
+</body>
+</html>
